@@ -3,9 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Primer Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+        <ul id="nav-list">
+            <li><a href="#about">Presentacion</a></li>
+            <li><a href="#hobbies">Pasatiempos</a></li>
+            <li><a href="#tasks">Tareas Prioritarias</a></li>
+            <li><a href="#experiencia">Experiencia Profesional</a></li>
+            <li><a href="#formacion">Formacion Academica</a></li>
+            <li><a href="#idiomas">Idiomas</a></li>
+            <li><a href="#conocimiento">Conocimiento</a></li>
+            <li><a href="#formulario">Formulario de Contacto</a></li>
+        </ul>
+        </nav>
+    </header>
     
+    <section>
+    <div id="about">
+    <h1>¡Hola! Me llamo Manuel Antonio Marulanda Luna</h1>
+    <img id=foto src="imagen.jpg">
+
+    <p>Soy tecnico en sistemas, trabajo con sistemas de computo, torres y portatiles.
+        Trabajo en reparacion de hardware y software, mantenimiento preventivo, asesorias tecnicas en manejo de sofware, 
+        actualización de hardware. Cuento con una experiencia de mas de 14 años en el ambito laboral.
+        En la actualidad estoy estudiando programación con la idea de encaminarme a estas tecnologias que
+        estan revolucionando el mundo.
+        En el siguiente formulario podra enviarnos el error que presenta su equipo y enviarnos una imagen del fallo presentado. 
+    </p>
+    </div>
+    </section>
+    <section>
+    <div id="hobbies">
+        <h2>Pasatiempos</h2>
+        <ul>Caminar</ul>
+        <ul>Videojuegos</ul>
+        <ul>Bailar</ul>
+        <ul>Hacer deporte</ul>
+        <ul>Ir al Cine</ul>
+        <ul>Ver series</ul>
+    </div>
+    </section>
+    <section>
+    <div id="tasks">
+        <h2>Tareas Prioritarias</h2>
+        <ol>
+           <li>Trabajo</li>
+           <li>Estudiar Programación</li>
+           <li>Entrenamiento en Programación</li>
+           <li>Estudiar Inglés</li>
+        </ol>
+    </div>
+    </section>
+    
+    <section id="experiencia">
+        <h2>Experiencia Profesional</h2>
+        <ul>
+            <li><a href="https://vamos.com.co/" target="_blank">Vamos</li><br>
+            <li><a href="https://casarepuestos.com.co/" target="_blank">Casa Repuestos</a></li><br>
+            <li>MANNY Maniacs</li><br>
+            <li>Variedades jACKY</li><br>
+        </ul>
+    </section>
+
+    <section id="formacion">
+        <h2>Formacion Academica</h2>
+        <ul>
+            <li><a href="https://talentotech.gov.co/portal/" target="_blank">TALENTO TECH</li><br>
+            <li><a href="https://www.uniajc.edu.co/" target="_blank">instituto Camacho Perea</a></li>
+                <p>Curso informatica Office</p>
+            <li>CENPROES-TF</li>
+            <p>Bachiller Tecnico en Electronica</p>    
+    
+        </ul>
+    </section>
+
+    <section id="idiomas">
+        <h2>Idiomas</h2>
+    
+    <table id="customers">
+        <tr>
+            <th>IDIOMA</th>
+            <th>NIVEL</th>
+        </tr>
+        <tr>
+            <td >Español</td>
+            <td>Idioma Nativo</td>
+        </tr>
+        <tr>
+            <td>Ingles</td>
+            <td>Lectura-Escritura</td>
+        </tr>
+
+    </table>
+    </section>
+
+    <section id="conocimiento">
+        <h1>Conocimiento</h1>
+
+    <table id="customers">
+        <tr>
+            <th>Conocimiento</th>
+            <th>Nivel</th>
+            <th>Adquirido desde</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Basico</td>
+            <td>2025-04</td>
+        </tr>
+        <tr>
+            <td>Git</td>
+            <td>Basico</td>
+            <td>2025-04</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Basico</td>
+            <td>2025-04</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Basico</td>
+            <td>2025-05</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Basico</td>
+            <td>2025-05</td>
+        </tr>
+    </table>
+    </section>
+    
+<div>
+    <setcion id="formulario">
+        <h1>Formulario de Contacto</h1>
+
+        <form class="formulario" onsubmit="return validarFormulario()">
+            
+            <label for="fname">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Nombre completo...">
+        
+            <label for="asunto">Motivo de Contacto:</label>
+            <input type="text" id="asunto" name="asunto"required>
+        
+
+            <label for="email">Correo Electronico</label>
+            <input type="text" id="email" name="email" placeholder="Email..."required>
+        
+
+            <label>Error visto en pantalla</label>
+            <input type="file" id="imagen" name="imagen" accept="imagen" onchange="mostrarImagen(event)">
+            <img id="ver-imagen" class="ver-imagen">
+        
+            <label for="name">Mensaje</label><br>
+            <textarea name="mensaje" id="mensaje" rows="10" cols="40"></textarea><br>
+            <button type="submit">Registrar</button>
+
+        </form>
+    </div>
+
+    </setcion>
+
+    <footer>
+        <p>Contactame:&COPY - <a href="manolito5400@gmail.com">Manuel Marulanda</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
